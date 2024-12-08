@@ -73,6 +73,17 @@ Show # All uniques
 	PlayEffect Brown
 	MinimapIcon 2 Brown Star
 
+Show # All socketed
+	Sockets > 0
+	Rarity Normal Magic Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 66 34 71 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 2 Grey Hexagon
+
 Show # support gems
 	BaseType == "Uncut Support Gem"
 	SetFontSize 45
@@ -99,3 +110,13 @@ Show # spirit gems
 	PlayAlertSound 2 300
 	PlayEffect Grey
 	MinimapIcon 1 Blue Triangle
+	
+Show # runes
+	Class == "Socketable"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 190 30 30 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
