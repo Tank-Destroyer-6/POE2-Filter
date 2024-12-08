@@ -1,0 +1,101 @@
+Show # Scrolls of wisdom
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom"
+	SetFontSize 40
+	SetTextColor 180 130 90 230
+	SetBorderColor 50 0 0 255
+	SetBackgroundColor 20 20 0 255
+
+Show # $type->gold $tier->stack3
+	StackSize >= 3000
+	BaseType == "Gold"
+	SetFontSize 45
+	SetTextColor 235 200 110 255
+	SetBorderColor 235 200 110 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 2 300
+	PlayEffect Orange
+	MinimapIcon 1 Yellow Cross
+
+Show # $type->gold $tier->stack2
+	StackSize >= 200
+	BaseType == "Gold"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 20 20 0 255
+	PlayEffect Orange Temp
+	MinimapIcon 1 White Cross
+
+Show # $type->gold $tier->stack1
+	StackSize >= 50
+	BaseType == "Gold"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 20 20 0 255
+	MinimapIcon 2 Grey Cross
+
+Show # $type->gold $tier->stack0
+	StackSize >= 1
+	BaseType == "Gold"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 20 20 0 255
+	MinimapIcon 2 Grey Cross
+
+Show # All non wisdom scroll currencies
+	Class == "Stackable Currency"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 180 76 58 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+Show # All rares
+	Rarity Rare
+	SetFontSize 45
+	SetBackgroundColor 20 20 0 255
+#	PlayAlertSound 8 300
+	PlayEffect Grey
+	MinimapIcon 2 Grey Diamond
+
+Show # All uniques
+	Rarity Unique
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 20 20 0 255
+	PlayAlertSound 3 300
+	PlayEffect Brown
+	MinimapIcon 2 Brown Star
+
+Show # support gems
+	BaseType == "Uncut Support Gem"
+	SetFontSize 45
+	SetTextColor 30 190 190 255
+	SetBorderColor 74 230 58 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 1 Blue Triangle
+
+Show # skill gems
+	BaseType == "Uncut Skill Gem"
+	SetFontSize 45
+	SetTextColor 30 190 190 255
+	SetBorderColor 74 230 58 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 1 Blue Triangle
+
+Show # spirit gems
+	BaseType == "Uncut Spirit Gem"
+	SetFontSize 45
+	SetTextColor 30 190 190 255
+	SetBorderColor 74 230 58 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 1 Blue Triangle
